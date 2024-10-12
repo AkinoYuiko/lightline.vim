@@ -7,6 +7,7 @@
 
 let s:save_cpo = &cpo
 set cpo&vim
+set nosmd
 
 let s:_ = 1 " 1: uninitialized, 2: disabled
 
@@ -94,7 +95,7 @@ endfunction
 let s:_lightline = {
       \   'active': {
       \     'left': [['mode', 'paste'], ['readonly', 'filename', 'modified']],
-      \     'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding', 'filetype']]
+      \     'right': [['lineinfo'], ['filetype']]
       \   },
       \   'inactive': {
       \     'left': [['filename']],
