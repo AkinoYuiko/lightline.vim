@@ -8,6 +8,7 @@
 let s:save_cpo = &cpo
 set cpo&vim
 set nosmd
+set ls=2
 
 let s:_ = 1 " 1: uninitialized, 2: disabled
 
